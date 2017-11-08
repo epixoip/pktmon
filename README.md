@@ -1,5 +1,5 @@
-# pps-mon
+# pktmon
 
-quick 'n' dirty script to monitor packets per second and bandwidth, which I wrote during a pentest to monitor nmap aggressiveness on an unstable network.
+I wrote a quick & dirty script to monitor pps and bps on a system during a pentest to monitor nmap aggressiveness on an unstable network. There are better tools for this job, but the system had no external connectivity. This script should have no dependencies outside of bash and coreutils.
 
-please excuse the bashisms :(
+Please excuse the bashisms. It's very unlike me to not write for posix sh, but I was in a hurry.
