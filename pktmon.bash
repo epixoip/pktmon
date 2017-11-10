@@ -3,8 +3,6 @@
 # updated: Wed Nov  8 14:06:32 CST 2017 by epixoip
 # please excuse the bashisms.
 
-export LC_ALL=C
-
 trap ctrl_c INT
 
 eth="$1"
@@ -44,7 +42,7 @@ ctrl_c()
 }
 
 if test "$(id -u)" != "0"; then
-    echo "you are not root $EUID" >&2
+    echo "you are not root" >&2
     exit
 fi
 
@@ -53,7 +51,7 @@ if test -z "$eth"; then
     exit
 fi
 
-if ! test -f "/sys/class/net/$eth/statistics/rx_packets"; then
+if ! test -d "/sys/class/net/$eth/statistics"; then
     echo "interface '$eth' does not exist" >&2
     exit
 fi
