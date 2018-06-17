@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # created: Sun Mar  5 00:03:32 CST 2017 by epixoip
 # updated: Wed Nov  8 14:06:32 CST 2017 by epixoip
 # please excuse the bashisms.
